@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Feedback</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #2193b0, #6dd5ed);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2193b0;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #2193b0;
+            outline: none;
+            box-shadow: 0 0 5px #6dd5ed;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2193b0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #176d81;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>Add Feedback</h2>
+
+        <form method="POST" action="{{ url_for('add_feedback') }}">
+
+            <label>Enter Name:</label><br>
+            <input type="text" name="Name" required>
+            <br><br>
+
+            <label>Enter Comment:</label><br>
+            <input type="text" name="Comment" required>
+            <br><br>
+
+            <label>Enter Rating (1-5):</label><br>
+            <input type="number" name="Rating" min="1" max="5" required>
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
