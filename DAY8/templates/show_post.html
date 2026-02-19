@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+    <tr>
+        <th>ID</th>
+        <th>User Name</th>
+        <th>Title</th>
+        <th>Role</th>
+        <th>Status</th>
+    </tr>
+
+    {% for use in user %}
+    <tr>
+        <td>{{ use.id }}</td>
+        <td>{{ use.user }}</td>
+        <td>{{ use.title }}</td>
+        <td>{{ use.role }}</td>
+        <td>{{ use.status }}</td>
+    </tr>
+    {% endfor %}
+
+</body>
+</html>

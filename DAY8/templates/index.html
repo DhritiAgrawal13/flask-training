@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+
+<h2>User Registration</h2>
+
+<form method="POST" action="{{ url_for('add') }}">
+    Name: <input type="text" name="name" required><br><br>
+    Password: <input type="password" name="password" required><br><br>
+    <input type="submit" value="Register">
+</form>
+
+
+</body>
+</html>
