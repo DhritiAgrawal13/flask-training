@@ -1,0 +1,175 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modern Attractive Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQlriNojyYXVSK8riasNZHF4tRuN0EF4tUzg&s") no-repeat center center/cover;
+            color: white;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(8px);
+        }
+
+        nav h1{
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover{
+            color: #ffdd59;
+        }
+
+        .hero{
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 20px;
+            background: rgba(0,0,0,0.4);
+        }
+
+        .hero h2{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .hero p{
+            font-size: 18px;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .btn{
+            padding: 12px 30px;
+            background: #ffdd59;
+            color: black;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover{
+            background: white;
+            transform: scale(1.1);
+        }
+
+        .cards{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 60px 20px;
+            flex-wrap: wrap;
+            background: rgba(0,0,0,0.6);
+        }
+
+        .card{
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            width: 250px;
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.2);
+        }
+
+        .card h3{
+            margin-bottom: 15px;
+        }
+
+        footer{
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.7);
+        }
+
+        @media(max-width: 768px){
+            .hero h2{
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>MyBrand</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h2>Welcome to My Attractive Website</h2>
+        <p>
+            Build modern and beautiful websites using simple HTML and CSS.
+            Clean design, smooth animations and responsive layout.
+        </p>
+        <button class="btn">Get Started</button>
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <h3>Fast</h3>
+            <p>Optimized and lightweight design.</p>
+        </div>
+
+        <div class="card">
+            <h3>Modern</h3>
+            <p>Clean and stylish interface.</p>
+        </div>
+
+        <div class="card">
+            <h3>Responsive</h3>
+            <p>Works perfectly on all devices.</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 MyBrand | All Rights Reserved
+    </footer>
+
+</body>
+</html>
+```
